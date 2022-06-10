@@ -1,5 +1,6 @@
 import React from "react"
 import Button from "./Button"
+import InputField from "./InputField"
 
 const Contact = () => {
   return (
@@ -41,38 +42,46 @@ const Contact = () => {
 					<div className = "col-sm-6 col-md-6">
 						<div className = "contact-form-body">
 							<form>
-								<div className = "row">
-									<div className = "col-sm-6 col-md-6">
-										<div className = "firstname">
-											<h4>Full Name *</h4>
-											<input type = "text" placeholder= "First Name" />
-										</div>
-									</div>
+								<div className="row">
+									
+									<InputField
+										fieldClassName="firstname"
+										fieldName="Full Name"
+										type="text"
+										placeholder="First Name"
+									/>
 
-									<div className = "col-sm-6 col-md-6">
-										<div className = "lastname">
-											<h4>Full Name *</h4>
-											<input type = "text" placeholder= "Last Name" />
-										</div>
-									</div>
+									<InputField
+										fieldClassName="lastname"
+										fieldName="Full Name"
+										type="text"
+										placeholder="Last Name"
+									/>
+
 								</div>
 
-								<div className = "row">
-									<div className = "col-sm-12 col-md-12">
-										<div className = "email">
-											<h4>Email *</h4>
-											<input type = "text" placeholder= "Email" />
-										</div>
-									</div>
+								<div className="row">
+
+									<InputField
+										fieldClassName="email"
+										fieldName="Email"
+										type="email"
+										placeholder="Email"
+										large={true}
+									/>
+									
 								</div>
 
-								<div className = "row">
-									<div className = "col-sm-12 col-md-12">
-										<div className = "message">
-											<h4>Message *</h4>
-											<textarea placeholder= "Message"></textarea>
-										</div>
-									</div>
+								<div className="row">
+
+									<InputField
+										fieldClassName="message"
+										fieldName="Message"
+										textArea={true}
+										placeholder="Message"
+										large={true}
+									/>
+
 								</div>
 
 								<div className = "row">
