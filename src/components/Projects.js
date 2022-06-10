@@ -6,6 +6,7 @@ const Projects = () => {
   return (
     <div className = "projects" id="projects">
 			<div className="container-fluid">
+
 				<div className = "row">
 					<div className = "col-sm-12 col-md-12 text-center">
 						<div className = "projects-header">
@@ -51,6 +52,7 @@ const Projects = () => {
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
   )
